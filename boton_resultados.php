@@ -6,7 +6,7 @@
 
 	$result=mysqli_query($link, "SELECT * FROM `big_data` ORDER BY `ID` DESC");
 	
-	$db=mysqli_select_db($link, 'ehealth');
+	//$db=mysqli_select_db($link, 'ehealth');
 
 	$filename = "Datos_resultados.xls"; // File Name
 	// Download file
@@ -27,12 +27,7 @@
 	}*/
 ?>
 
-<?php
-include "../../connect_e_health.php";	
-	
-	$link= db_Connection();
-	$result= $link->query("SELECT * FROM big_data ORDER BY `ID` DESC");
-?>
+
 
 <html>
    <head>

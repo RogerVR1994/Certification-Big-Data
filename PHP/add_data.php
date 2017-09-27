@@ -14,9 +14,9 @@
       $fix = "GPS";
 
 
-      $peticion3="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+      $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
       echo $peticion;
-      $link->query($peticion3);
+      $link->query($peticion);
        
     }
     
@@ -24,9 +24,9 @@
        $verdadero = 1;
        $fix = "Celular"
 
-       $peticion3="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+       $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
        echo $peticion;
-       $link->query($peticion3);
+       $link->query($peticion);
 
 
     }
@@ -34,15 +34,15 @@
     $verdadero = 0;
     $fix = "Celular"
 
-    $peticion3="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+    $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     echo $peticion;
-    $link->query($peticion3);
+    $link->query($peticion);
 
     $fix = "GPS";
 
-    $peticion3="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+    $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     echo $peticion;
-    $link->query($peticion3);
+    $link->query($peticion);
 
     
    	$link->close();

@@ -10,12 +10,12 @@
 
    if (!$latitud){
 
-    $latitud=NULL;
+    $latitud="NULL";
    }
 
    if (!$longitud){
 
-    $longitud=NULL;
+    $longitud="NULL";
    }
 
 

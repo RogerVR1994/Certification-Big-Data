@@ -6,9 +6,7 @@
 
 	 $verdadero = $_POST["veracidad"];
    
-   $latitud = $latitud/1000;
-   $longitud = $longitud/1000;
-   $prob_fix = rand(0,1);
+   
    $arr_fix = array("GPS", "Celular");
 
    if (!$latitud){
@@ -27,6 +25,8 @@
       $paciente = rand(1, 259);
       $latitud = rand(19340, 19550);
       $longitud = rand(-99260, -99036);
+      $latitud = $latitud/1000;
+      $longitud = $longitud/1000;
       $prob_fix = rand(0,1);
       $fix = $arr_fix($prob_fix);
 

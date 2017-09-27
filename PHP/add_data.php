@@ -24,9 +24,9 @@
        $verdadero = 1;
        $fix = "Celular"
 
-       $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-       echo $peticion;
-       $link->query($peticion);
+       $peticion2="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+       echo $peticion2;
+       $link->query($peticion2);
 
 
     }

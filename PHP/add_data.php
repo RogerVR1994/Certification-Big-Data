@@ -4,12 +4,14 @@
    	
    	$link=db_Connection();
 
-	 $veracidad = $_POST["veracidad"];
+	 $verdadero = $_POST["veracidad"];
    $paciente = rand(1, 259);
    $latitud = rand(19340, 19550);
    $longitud = rand(-99260, -99036);
    $latitud = $latitud/1000;
    $longitud = $longitud/1000;
+   $prob_fix = rand(0,1);
+   $arr_fix = ["GPS", "Celular"];
 
    echo $latitud;
    echo $longitud;
@@ -27,39 +29,14 @@
 
 
    for ($n = 0; $n<10; $n++){
-      $verdadero = 1;
-      $fix = "GPS";
-
+      $prob_fix = rand(0,1);
+      $fix = $arr_fix($prob_fix);
 
       $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
       
       $link->query($peticion);
        
     }
-    
-    for ($n = 0; $n<3; $n++){
-       $verdadero = 1;
-       $fix = "Celular";
-
-       $peticion2="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-      
-       $link->query($peticion2);
-
-
-    }
-
-    $verdadero = 0;
-    $fix = "Celular";
-
-    $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-    
-    $link->query($peticion);
-
-    $fix = "GPS";
-
-    $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-    echo $peticion;
-    $link->query($peticion);
 
     
    	$link->close();

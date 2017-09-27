@@ -32,7 +32,7 @@
     }
 
     $verdadero = 0;
-    $fix = "Celular"
+    $fix = "Celular";
 
     $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     echo $peticion;

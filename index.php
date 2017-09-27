@@ -12,7 +12,7 @@ include "../../connect_e_health.php";
    </head>
 <body>
    <div class="container">
-	    <img src="images/logo.png" style="width:170px;height:130px>
+	    <img src="images/logo.png" style="width:170px;height:130px">
 	    </br></br>
    
    <h1>Información de Resultados</h1>

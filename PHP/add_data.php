@@ -9,10 +9,7 @@
    $latitud = $latitud/1000;
    $longitud = $longitud/1000;
    $prob_fix = rand(0,1);
-   $arr_fix = ["GPS", "Celular"];
-
-   echo $latitud;
-   echo $longitud;
+   $arr_fix = ("GPS", "Celular");
 
    if (!$latitud){
 

@@ -22,7 +22,7 @@
     
     for ($n = 0; $n<3; $n++){
        $verdadero = 1;
-       $fix = "Celular"
+       $fix = "Celular";
 
        $peticion2="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
        echo $peticion2;

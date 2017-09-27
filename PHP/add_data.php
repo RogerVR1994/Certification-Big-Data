@@ -21,10 +21,10 @@
 
 
 
-   for ($n = 0; $n<9; $n++){
+   for ($n = 0; $n<131; $n++){
       $paciente = rand(1, 259);
       $latitud = rand(19340, 19550);
-      $longitud = 0;
+      $longitud = rand(-99260, -99036);
       $latitud = $latitud/1000;
       $longitud = $longitud/1000;
       $prob_fix = rand(0,1);

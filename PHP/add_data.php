@@ -9,13 +9,14 @@
    $longitud=$_POST["Lat"];
 
 
+
    for ($n = 0; $n<10; $n++){
       $verdadero = 1;
       $fix = "GPS";
 
 
       $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-      echo $peticion;
+      
       $link->query($peticion);
        
     }
@@ -25,7 +26,7 @@
        $fix = "Celular";
 
        $peticion2="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-       echo $peticion2;
+      
        $link->query($peticion2);
 
 
@@ -35,7 +36,7 @@
     $fix = "Celular";
 
     $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
-    echo $peticion;
+    
     $link->query($peticion);
 
     $fix = "GPS";

@@ -21,9 +21,9 @@
 
 
 
-   for ($n = 0; $n<942; $n++){
+   for ($n = 0; $n<15; $n++){
       $paciente = rand(1, 259);
-      $latitud = rand(19340, 19550);
+      $latitud = 0;
       $longitud = rand(-99260, -99036);
       $latitud = $latitud/1000;
       $longitud = $longitud/1000;

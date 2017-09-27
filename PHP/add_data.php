@@ -7,7 +7,7 @@
 	 $paciente=$_POST["Paciente"];
    $latitud=$_POST["Lon"];
    $longitud=$_POST["Lat"];
-   $ran = rand(int 19340, int 19550);
+   $ran = rand(19340, 19550);
    $ran = $ran/1000;
    echo $ran;
 

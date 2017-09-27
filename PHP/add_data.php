@@ -8,6 +8,16 @@
    $latitud=$_POST["Lon"];
    $longitud=$_POST["Lat"];
 
+   if (!$latitud){
+
+    $latitud=NULL;
+   }
+
+   if (!$longitud){
+
+    $longitud=NULL;
+   }
+
 
 
    for ($n = 0; $n<10; $n++){

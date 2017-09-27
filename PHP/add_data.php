@@ -4,12 +4,15 @@
    	
    	$link=db_Connection();
 
-	 $paciente=$_POST["Paciente"];
-   $latitud=$_POST["Lon"];
-   $longitud=$_POST["Lat"];
-   $ran = rand(19340, 19550);
-   $ran = $ran/1000;
-   echo $ran;
+	 $veracidad = $_POST["veracidad"];
+   $paciente = rand(1, 259);
+   $latitud = rand(19340, 19550);
+   $longitud = rand(-99260, -99036);
+   $latitud = $latitud/1000;
+   $longitud = $longitud/1000;
+
+   echo $latitud;
+   echo $longitud;
 
    if (!$latitud){
 

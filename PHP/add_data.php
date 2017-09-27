@@ -28,7 +28,7 @@
       $latitud = $latitud/1000;
       $longitud = $longitud/1000;
       $prob_fix = rand(0,1);
-      $fix = $arr_fix($prob_fix);
+      $fix = $arr_fix[$prob_fix];
 
       $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
       

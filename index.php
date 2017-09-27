@@ -8,11 +8,11 @@ include "../../connect_e_health.php";
 <html>
    <head>
       <title>Info Resultados</title>
-      <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
    </head>
 <body>
    <div class="container">
-	    <img src="../../../images/logo.png">
+	    <img src="images/logo.png">
 	    </br></br>
    
    <h1>Información de Resultados</h1>

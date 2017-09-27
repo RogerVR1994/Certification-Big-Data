@@ -9,7 +9,7 @@
    $longitud=$_POST["Lat"];
 
 
-   for ($n = 0; $n<10; n++){
+   for ($n = 0; $n<10; $n++){
       $verdadero = 1;
       $fix = "GPS";
 
@@ -20,7 +20,7 @@
        
     }
     
-    for ($n = 0; $n<3; n++){
+    for ($n = 0; $n<3; $n++){
        $verdadero = 1;
        $fix = "Celular"
 

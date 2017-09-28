@@ -30,7 +30,7 @@
       $prob_fix = rand(0,1);
       $fix = $arr_fix[$prob_fix];
 
-      $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, NULL, '" .$fix."', $verdadero)"; 
+      $peticion="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
       
       $link->query($peticion);
       echo $peticion; 

@@ -11,7 +11,7 @@
 	$filename = "Datos_resultados.csv"; // File Name
 	// Download file
 	header("Content-Type: application/vnd.ms-excel");
-	header('Content-Disposition: attachment; filename="Datos_resultados.xls"');
+	header('Content-Disposition: attachment; filename="Datos_resultados.csv"');
 	header("Pragma: no-cache");
 	/*
 	$user_query = mysqli_query('select name,work from info');

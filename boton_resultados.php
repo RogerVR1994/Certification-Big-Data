@@ -8,7 +8,7 @@
 	
 	//$db=mysqli_select_db($link, 'ehealth');
 
-	$filename = "Datos_resultados.xls"; // File Name
+	$filename = "Datos_resultados.csv"; // File Name
 	// Download file
 	header("Content-Type: application/vnd.ms-excel");
 	header('Content-Disposition: attachment; filename="Datos_resultados.xls"');

@@ -4,7 +4,7 @@ include "../../connect_e_health.php";
 	$link= db_Connection();
 	$result= $link->query("SELECT * FROM big_data ORDER BY `ID` DESC");
 ?>
-<!--
+
 <html>
    <head>
       <title>Info Resultados</title>
@@ -16,7 +16,7 @@ include "../../connect_e_health.php";
 	    </br></br>
    
    <h1>Información de Resultados</h1>
-   <a href="boton_resultados.php">Descarga de Base de Datos</a>-->
+   <a href="boton_resultados.php">Descarga de Base de Datos</a>
    <div class="table-responsive">
 	   <table class="table table-striped">
 			<tr>

@@ -15,8 +15,8 @@ include "../../connect_e_health.php";
 	    <img src="images/logo.png" style="width:170px;height:130px">
 	    </br></br>
    
-   <h1>Información de Resultados</h1>-->
-   <a href="boton_resultados.php">Descarga de Base de Datos</a>
+   <h1>Información de Resultados</h1>
+   <a href="boton_resultados.php">Descarga de Base de Datos</a>-->
    <div class="table-responsive">
 	   <table class="table table-striped">
 			<tr>

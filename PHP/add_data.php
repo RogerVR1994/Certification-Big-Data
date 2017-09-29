@@ -16,12 +16,36 @@
     $prob_fix = rand(0,1);
     $fix = $arr_fix[$prob_fix];
 
+    $peticion_suma="SELECT SUM(Verdadero) AS Verdadero from big_data WHERE Paciente = $paciente";
+    $link->query($peticion_suma);
+    $result = $link->query($peticion_suma);
+
+    if ($result->num_rows > 0) {
+    // output data of each row
+      while($row = $result->fetch_assoc()) {
+        $incidentes = $row["Verdadero"];
+      }
+    }
+
+    else {
+      echo "0 results";
+    }
+
+    echo $incidentes;
+    echo "\n";
+
+    $peticion_update="UPDATE paciente_big_data SET Incidentes=$incidentes Where Paciente = $paciente";
+
+    $link->query($peticion_update);
+
     $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     
     $link->query($peticion_insert);
     //echo $peticion; 
   }
+
+
   $link->close();
-  include("update_data.php");
+  //include("update_data.php");
 ?>
 

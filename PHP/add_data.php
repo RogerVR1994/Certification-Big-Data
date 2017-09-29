@@ -33,7 +33,7 @@
     else {
       echo "0 results";
     }
-
+    echo "\n";
     echo 1;
     echo "\n";
 

@@ -15,6 +15,8 @@
     $longitud = $longitud/1000;
     $prob_fix = rand(0,1);
     $fix = $arr_fix[$prob_fix];
+    echo $paciente;
+    echo "\n";
 
     $peticion_suma="SELECT SUM(Verdadero) AS Verdadero from big_data WHERE Paciente = $paciente";
     echo $peticion_suma;

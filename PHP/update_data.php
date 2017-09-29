@@ -16,7 +16,7 @@
  
     $peticion_creacion="INSERT INTO paciente_big_data VALUES(NULL, $n, '".$sex."', $edad, $incidentes)";
 
-    $link->query($peticion_update);
+    $link->query($peticion_creacion);
   }
 
   $link->close();

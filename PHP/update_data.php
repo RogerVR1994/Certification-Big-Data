@@ -6,7 +6,7 @@
   $sexo = array("hombre", "mujer");
   $incidentes=0;
 
-  for ($n=0; $n<256; $n++){
+  for ($n=1; $n<256; $n++){
     $sex = $sexo[rand(0,1)];
     echo $sex;
     echo "\n";

@@ -7,7 +7,7 @@
   $incidentes=0;
 
   for ($n=0; $n<256; $n++){
-    $sex = $sexo(rand(0,1)):
+    $sex = $sexo(rand(0,1));
     $edad = rand(58, 81);
 
 

@@ -41,12 +41,14 @@
 
     echo $peticion_update;
 
+
     $link->query($peticion_update);
 
     $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     
     $link->query($peticion_insert);
     echo $peticion; 
+    echo "\n";
   }
 
 

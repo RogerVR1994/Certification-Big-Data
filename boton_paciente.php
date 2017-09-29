@@ -27,7 +27,6 @@
 	}*/
 ?>
 
-
 <html>
    <head>
       <title>Info Resultados</title>
@@ -39,7 +38,7 @@
 	    </br></br>
    
    <h1>Información de Resultados</h1>
-   <a href="boton_resultados.php">Descarga de Base de Datos</a>
+   <a href="boton_paciente.php">Descarga de Base de Datos</a>
    <div class="table-responsive">
 	   <table class="table table-striped">
 			<tr>
@@ -54,7 +53,7 @@
 	      <?php 
 			  if($result!==FALSE){
 			     while($row = $result->fetch_assoc()) {
-			        printf("<tr><td> &nbsp;%s </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td></td><td> &nbsp;%s&nbsp; </td></tr>", 
+			        printf("<tr><td> &nbsp;%s </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td></td><td> &nbsp;%s&nbsp; </td></tr>", 
 			           $row["ID"], $row["Paciente"], $row["Sexo"], $row["Edad"], $row["Incidentes"]);
 			     }
 			     $link->close();
@@ -68,5 +67,6 @@
   </div>
 </body>
 </html>
+
 
 

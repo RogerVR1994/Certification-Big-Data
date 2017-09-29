@@ -38,6 +38,7 @@
 
 
     }
+    echo $incidentes;
     echo "\n";
     echo 1;
     echo "\n";

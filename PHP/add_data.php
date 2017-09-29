@@ -17,6 +17,7 @@
     $fix = $arr_fix[$prob_fix];
 
     $peticion_suma="SELECT SUM(Verdadero) AS Verdadero from big_data WHERE Paciente = $paciente";
+    echo $peticion_suma;
     $link->query($peticion_suma);
     $result = $link->query($peticion_suma);
 

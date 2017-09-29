@@ -31,7 +31,7 @@ include "../../connect_e_health.php";
 	      <?php 
 			  if($result!==FALSE){
 			     while($row = $result->fetch_assoc()) {
-			        printf("<tr><td> &nbsp;%s </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td></td><td> &nbsp;%s&nbsp; </td></tr>", 
+			        printf("<tr><td> &nbsp;%s </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td><td> &nbsp;%s&nbsp; </td></td><td> &nbsp;%s&nbsp; </td></tr>", 
 			           $row["ID"], $row["Paciente"], $row["Sexo"], $row["Edad"], $row["Incidentes"]);
 			     }
 			     $link->close();

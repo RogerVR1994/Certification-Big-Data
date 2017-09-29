@@ -31,7 +31,7 @@
       echo "0 results";
     }
 
-    echo $incidentes;
+    echo 1;
     echo "\n";
 
     $peticion_update="UPDATE paciente_big_data SET Incidentes=$incidentes Where Paciente = $paciente";
@@ -41,7 +41,7 @@
     $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
     
     $link->query($peticion_insert);
-    //echo $peticion; 
+    echo $peticion; 
   }
 
 

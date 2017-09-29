@@ -39,6 +39,8 @@
 
     $peticion_update="UPDATE paciente_big_data SET Incidentes=$incidentes Where Paciente = $paciente";
 
+    echo $peticion_update;
+
     $link->query($peticion_update);
 
     $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 

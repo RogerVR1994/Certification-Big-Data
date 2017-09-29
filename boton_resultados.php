@@ -50,7 +50,7 @@
 				<td>&nbsp;Latitud&nbsp;</td>
 				<td>&nbsp;Longitud&nbsp;</td>
 				<td>&nbsp;Fix&nbsp;</td>
-				<td>&nbsp;Verdadero/Falso&nbsp;</td>
+				<td>&nbsp;Prediccion&nbsp;</td>
 				
 			</tr>
 

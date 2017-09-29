@@ -7,7 +7,7 @@
   $arr_fix = array("GPS", "Celular");
 
 
-  for ($n = 0; $n<132; $n++){
+  for ($n = 0; $n<13; $n++){
     $paciente = rand(1, 259);
     $latitud = rand(19340, 19550);
     $longitud = rand(-99260, -99036);
@@ -50,7 +50,7 @@
 
     $link->query($peticion_update);
 
-    $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, $latitud, $longitud, '" .$fix."', $verdadero)"; 
+    $peticion_insert="INSERT INTO big_data VALUES (NULL, '" .$paciente."', NULL, NULL, $longitud, '" .$fix."', $verdadero)"; 
     
     $link->query($peticion_insert);
     echo $peticion; 

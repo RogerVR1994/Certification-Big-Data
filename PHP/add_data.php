@@ -33,7 +33,7 @@
     else {
       echo "0 results";
     }
-    if (!incidentes){
+    if (!$incidentes){
       $incidentes=0;
 
 

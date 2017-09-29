@@ -3,34 +3,21 @@
   include "../../../connect_e_health.php";  
   
   $link=db_Connection();
+  $sexo = array("hombre", "mujer");
+  $incidentes=0;
+
+  for ($n=0; $n<256; $n++){
+    $sex = $sexo(rand(0,1)):
+    $edad = rand(58, 81);
+
+
  
-  $peticion_suma="SELECT SUM(Verdadero) AS Verdadero from big_data WHERE ID=3";
-  $link->query($peticion_suma);
-  $result = $link->query($peticion_suma);
+    $peticion_creacion="INSERT INTO paciente_big_data VALUES(NULL, $n, '".$sex."', $edad, $incidentes)";
 
-  if ($result->num_rows > 0) {
-  // output data of each row
-    while($row = $result->fetch_assoc()) {
-      $incidentes = $row["Verdadero"];
-    }
+    $link->query($peticion_update);
   }
-
-  else {
-    echo "0 results";
-  }
-
-  echo $incidentes;
-  echo "\n";
-
-  $peticion_update="UPDATE paciente_big_data SET Incidentes=$incidentes Where Paciente = $paciente";
-
-  $link->query($peticion_update);
 
   $link->close();
   
-  $link=db_Connection();
-  $peticion_update="UPDATE paciente_big_data SET Incidentes=$incidentes Where Paciente = $paciente";
-  $link->query($peticion_update);
-  $link->close();
  
  ?>

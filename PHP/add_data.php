@@ -22,6 +22,6 @@
     //echo $peticion; 
   }
   $link->close();
-
+  include("update_data.php");
 ?>
 

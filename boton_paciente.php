@@ -4,7 +4,7 @@
 	
 	$link=db_Connection();
 
-	$result=mysqli_query($link, "SELECT * FROM `big_data` ORDER BY `ID` DESC");
+	$result=mysqli_query($link, "SELECT * FROM `paciente_big_data` ORDER BY `ID` DESC");
 	
 	//$db=mysqli_select_db($link, 'ehealth');
 
